@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title> 
+
+    <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/2406fea251.js" crossorigin="anonymous"></script>
+</head>
+<body>
+         <section>
+       <div><a href="index.html"><button class="gobackbutton">GO BACK</button></a></div>
+        </div>
+       </section>
+    
+       <section>  
+       <div class="wrapper">
+        <p><label class="entermessage">What mesage do you want to send?</label></p>
+        <textarea id="entermessage" cols="8" rows="10" placeholder="Explicit and clear messages go in here."></textarea>
+        </div>
+
+        <div class="wrapper">
+            <p><label class="entermessage">What word(s) do you want redacted?</label></p>
+            <textarea id="enterword" cols="8" rows="10" placeholder="Words you want redacted go in here."></textarea>
+        </div>
+         
+         <div class="option">
+   <select id="selected" > 
+    <option>Choose Redact Style</option>
+    <option value="asterisk">Asterisk(*)</option>
+    <option value="characters">Characters($#?!)</option>
+    <option value="replaceword">Replace Word</option>
+    </select>
+         </div>
+
+         
+            <div class="wrapper">
+            <p><label class="entermessage">Replace with:</label></p>
+            <textarea id="replace" cols="8" rows="10" placeholder="Replacement words go in here."></textarea>
+        </div>
+         
+        <div class="flex-container">
+            <button class="redactbutton" id="redact-btn">REDACT NOW</button>
+        </div>
+         
+        <div class="wrapper">
+            <p><label class="entermessage">What your message looks like?</label></p>
+            <textarea id="output" cols="8" rows="10" ></textarea>
+        </div>
+    <div class="flex-container">        
+      <button class="copybtn" id="copy-btn">Copy</button> 
+    <button class="clearbtn" id="clear-btn">Clear</button>
+   </div> 
+      <br> 
+         <div class="stats">
+         <h1 class="statstitle">STATISTICS:</h1>
+     <p>Word(s) scanned: <input type="text" name="" id="scannedinput"> </p>
+    <p>Word(s) matched: <input type="text" name="" id="matchedinput"> </p>
+    <p>Character(s) scrambled: <input type="text" name="" id="scrambledinput"> </p>
+    <p>Redactr Timer: <input type="text" name="" id="timer"></p>
+      </div>
+    </section>
+
+
+  
+    <script src="index.mjs" type="module"></script>
+
+ 
+</body>
+</html>
